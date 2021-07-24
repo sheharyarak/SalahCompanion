@@ -17,22 +17,22 @@ import Rabih from './audio/RabihFirli.mp3';
 
 const Poses = [
 	{ //0 qiyam1
-		name: "Qiyaam",
+		name: "Qiyaam قيام‎",
 		img: QiyaamIcon,
 		mp3: Qiyam1
 	},
 	{ //1 qiyam2
-		name: "Qiyaam",
+		name: "Qiyaam قيام‎",
 		img: QiyaamIcon,
 		mp3: Qiyam2
 	},
 	{ //2 qiyaam3
-		name: "Qiyaam",
+		name: "Qiyaam قيام‎",
 		img: QiyaamIcon,
 		mp3: Qiyam3
 	},
 	{ //3 rukoo
-		name: "Rukoo",
+		name: "Rukoo رُكوع",
 		img: RukooIcon,
 		mp3: Rukoo
 	},
@@ -42,7 +42,7 @@ const Poses = [
 		mp3: Qaumah
 	},
 	{ //5 sajdah
-		name: "Sajdah",
+		name: "Sajdah سجدة‎",
 		img: SajdahIcon,
 		mp3: Sajdah
 	},
@@ -52,12 +52,12 @@ const Poses = [
 		mp3: Jalsa1
 	},
 	{ //7 jalsa2
-		name: "Jalsa",
+		name: "Jalsa جلسة",
 		img: JalsaIcon,
 		mp3: Jalsa2
 	},
 	{ //8 rabihfirli
-		name: "Jalsa",
+		name: "Jalsa جلسة",
 		img: JalsaIcon,
 		mp3: Rabih
 	},

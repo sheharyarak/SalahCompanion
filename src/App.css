@@ -20,20 +20,48 @@ body {
 .App {
   width: 100%;
   height: 100%;
-  background-color: #129773;
+  background-color: #003262;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 5fr 4fr 1fr;
-      grid-template-rows: 1fr 5fr 4fr 1fr;
+  -ms-grid-rows: 1fr 10fr 10fr 2fr;
+      grid-template-rows: 1fr 10fr 10fr 2fr;
   grid-auto-rows: minmax(100px, auto);
   grid-auto-columns: minmax(100px, auto);
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1 / 6;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  opacity: 50%;
+  place-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[13];
+      grid-template-columns: repeat(13, 1fr);
+  -ms-grid-rows: (1fr)[13];
+      grid-template-rows: repeat(13, 1fr);
+  border: 1px solid black;
+  z-index: 1;
+  color: #0054a4;
+}
+
+.nav, .upper-home, .upper-salah, .lower-home, .lower-salah, .name, .pose, .footer, .RakatOption, .RakatOptionSelected {
+  z-index: 2;
 }
 
 .nav {
   -ms-grid-row: 1;
   grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  max-height: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,16 +71,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1ac899;
+  background-color: rgba(0, 63, 124, 0.5);
   font-size: 5em;
   font-weight: 700;
   text-align: center;
-  color: #f8fba8;
+  color: #FDB515;
+  border-radius: 0 0 0.3em 0.3em;
+}
+
+.title {
+  opacity: 100%;
 }
 
 .upper-home {
   -ms-grid-row: 2;
   grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,12 +99,14 @@ body {
           align-items: center;
   text-align: center;
   font-size: 6em;
-  color: #f8fba8;
+  color: #FDB515;
 }
 
 .upper-salah {
   -ms-grid-row: 2;
   grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -80,6 +117,8 @@ body {
 }
 
 .pose {
+  -ms-grid-column: 1;
+  grid-column: 1;
   padding-top: 3em;
   -ms-grid-row: 1;
   grid-row: 1;
@@ -106,7 +145,7 @@ body {
 .name h1 {
   font-size: 6em;
   font-weight: 400;
-  color: #f8fba8;
+  color: #FDB515;
 }
 
 .lower-salah {
@@ -121,11 +160,12 @@ body {
           align-items: center;
   -ms-grid-row: 3;
   grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .lower-salah audio {
   width: 50%;
-  opacity: 50%;
 }
 
 .RakatSelector {
@@ -153,46 +193,46 @@ body {
 .RakatOption {
   border: none;
   border-radius: 0.5em;
-  background-color: #1ac899;
+  background-color: #003a71;
   width: 2em;
   height: 2em;
   font-size: 8em;
   font-weight: 600;
-  color: #f8fba8;
-  -webkit-box-shadow: 0 0.1em 0.1em 0.1em #128d6c;
-          box-shadow: 0 0.1em 0.1em 0.1em #128d6c;
+  color: #FDB515;
+  -webkit-box-shadow: 0 0.1em 0.1em 0.1em #00284e;
+          box-shadow: 0 0.1em 0.1em 0.1em #00284e;
 }
 
 .RakatOptionSelected {
-  border: 0.1em solid #f8fba8;
+  border: 0.1em solid #FDB515;
   border-radius: 0.5em;
-  background-color: #129773;
+  background-color: #003262;
   width: 2em;
   height: 2em;
   font-size: 8em;
   font-weight: 600;
-  color: #f8fba8;
+  color: #FDB515;
 }
 
 .RakatOption:hover {
-  background-color: #1bd1a0;
+  background-color: #003f7c;
 }
 
 .RakatOptionSelected:hover {
-  background-color: #118e6c;
+  background-color: #002d58;
 }
 
 .RakatOption:active, .RakatOptionSelected:active {
-  border: 0.1em solid #f8fba8;
+  border: 0.1em solid #FDB515;
   border-radius: 0.5em;
-  background-color: #129773;
+  background-color: #003262;
   width: 2em;
   height: 2em;
   font-size: 8em;
   font-weight: 600;
-  color: #f8fba8;
-  -webkit-box-shadow: 0 0.1em 0.1em 0.1em inset #0b5c46;
-          box-shadow: 0 0.1em 0.1em 0.1em inset #0b5c46;
+  color: #FDB515;
+  -webkit-box-shadow: 0 0.1em 0.1em 0.1em inset #002549;
+          box-shadow: 0 0.1em 0.1em 0.1em inset #002549;
 }
 
 .lower-home {
@@ -205,6 +245,10 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 .footer {
@@ -217,14 +261,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 4;
+  grid-row: 4;
   font-size: 2.25em;
   font-weight: 200;
-  color: #f8fba8;
+  color: #FDB515;
 }
 
 .footer a {
   text-decoration: none;
-  color: darkgoldenrod;
+  color: #C4820E;
 }
 
 @media only screen and (max-width: 540px) {
