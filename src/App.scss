@@ -114,12 +114,9 @@ body {
 	
 	grid-template-columns: 1;
 	grid-template-rows: 2fr 1fr;
-	
-	// border: 1px solid black;
 }
 
 .pose {
-	// border: 1px solid black;
 	
 	grid-column: 1;
 	padding-top: 3em;
@@ -143,7 +140,6 @@ body {
 }
 
 .name {
-	// border: 1px solid black;
 	
 	h1 {
 		font-size: 6em;	
@@ -154,7 +150,6 @@ body {
 }
 
 .lower-salah {
-	// border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -163,7 +158,6 @@ body {
 	grid-column: 1;
 	
 	audio {
-		// border: 1px solid black;
 		width: 50%;
 	}
 }

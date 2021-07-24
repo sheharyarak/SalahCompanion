@@ -8,7 +8,6 @@ import {
   Link,
   useLocation
 } from "react-router-dom";
-import './App.css';
 import ReactAudioPlayer from "react-audio-player";
 
 function App() {
