@@ -8,7 +8,7 @@ import {
   Link,
   useLocation
 } from "react-router-dom";
-// import './App.css'
+import './App.css'
 import ReactAudioPlayer from "react-audio-player";
 
 function App() {
@@ -190,10 +190,16 @@ function Salah(props) {
   const seq = Sequences[rakat]
   // console.log(seq);
   const [index, setIndex] = useState(0);
+  const [rakah, setRakah] = useState(1);
+
   const pose = Poses[seq[index]];
+
   const onEnded = (e) => {
     if (index + 1 < seq.length){
       setIndex(index + 1);
+      if (seq[index + 1] < 3) {
+        setRakah(rakah + 1);
+      }
     }
   }
 
@@ -201,6 +207,9 @@ function Salah(props) {
   return (
     <>
       <div className="upper-salah">
+        <div className="rakah">
+          <h2>Rakah: {rakah}</h2>
+        </div>
         <div className="pose">
           <img src={pose.img}/>
         </div>
