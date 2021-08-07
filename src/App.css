@@ -1,2 +1,397 @@
-@import url("https://storage.googleapis.com/salahcompanion/App.css");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Markazi+Text:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+body {
+  font-family: 'Poppins';
+  height: 100vh;
+  font-size: 9px;
+  padding: 0;
+  margin: 0;
+  background-color: #003262;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 10fr 5fr 1fr;
+      grid-template-rows: 1fr 10fr 5fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, auto);
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1 / 6;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  place-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[13];
+      grid-template-columns: repeat(13, 1fr);
+  -ms-grid-rows: (1fr)[16];
+      grid-template-rows: repeat(16, 1fr);
+  border: 1px solid black;
+  z-index: -1;
+  font-weight: 400;
+  color: #0054a4;
+  text-align: center;
+}
+
+.nameAllah {
+  font-family: 'Amiri';
+  font-size: 3em;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 63, 124, 0.5);
+  font-size: 5em;
+  font-weight: 600;
+  line-height: 1em;
+  border-radius: 0 0 0.3em 0.3em;
+  padding: 0.3em 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #FDB515;
+}
+
+.nav .arabic {
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+
+.arabic {
+  font-family: 'Markazi Text';
+  padding-left: 0.3em;
+  font-size: 1.3em;
+  pointer-events: none;
+}
+
+.center {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center .formContainer {
+  display: block;
+}
+
+.center .formContainer .title {
+  color: #FDB515;
+  font-size: 3em;
+}
+
+.center .formContainer textarea {
+  background-color: rgba(0, 58, 113, 0.5);
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  font-size: 5em;
+  color: #FDB515;
+}
+
+.center .formContainer textarea:focus {
+  outline: none;
+  border: 2px solid #C4820E;
+}
+
+.center .formContainer a {
+  display: block;
+  padding: 0.5em 1em;
+  background-color: #C4820E;
+  color: white;
+  font-size: 2em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.upper-home {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 6em;
+  color: #FDB515;
+}
+
+.upper-salah {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+}
+
+.rakah {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.rakah h2 {
+  font-size: 5.9em;
+  font-weight: 400;
+  color: #FDB515;
+}
+
+.pose {
+  padding-top: 3em;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  height: 35em;
+  width: 35em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pose img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pose svg {
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.name h1 {
+  font-size: 6em;
+  font-weight: 400;
+  color: #FDB515;
+}
+
+.lower-salah {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+}
+
+.lower-salah .controls {
+  place-self: center;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.lower-salah .controls .Option {
+  height: 1em;
+  width: 1em;
+  padding: 0;
+  border-radius: 0.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lower-salah .controls .Option svg {
+  fill: #FDB515;
+  width: 100%;
+  height: 100%;
+}
+
+.audioplayer {
+  display: none;
+}
+
+.Selector {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4em;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
+  grid-row-gap: 3em;
+}
+
+.Option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #003a71;
+  font-size: 8em;
+  font-weight: 600;
+  color: #FDB515;
+  -webkit-box-shadow: 0 0.1em 0.1em 0.1em rgba(0, 37, 73, 0.5);
+          box-shadow: 0 0.1em 0.1em 0.1em rgba(0, 37, 73, 0.5);
+}
+
+.Rakat {
+  width: 2em;
+  height: 2em;
+}
+
+.Salat {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  padding: 0.35em;
+}
+
+.Option:hover {
+  background-color: #003f7c;
+}
+
+.Option:active {
+  border: 0.1em solid #FDB515;
+  border-radius: 0.5em;
+  background-color: #003262;
+  -webkit-box-shadow: 0 0.1em 0.1em 0.1em inset #002549;
+          box-shadow: 0 0.1em 0.1em 0.1em inset #002549;
+}
+
+.lower-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.footer {
+  padding-top: 2em;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  font-size: 2.25em;
+  font-weight: 200;
+  color: #FDB515;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #C4820E;
+}
+
+@media only screen and (max-width: 540px) {
+  body {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  body {
+    font-size: 4px;
+  }
+}
 /*# sourceMappingURL=App.css.map */
