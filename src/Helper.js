@@ -15,6 +15,16 @@ import NextIcon from './icons/navigate_next_black_24dp.svg';
 import PlayIcon from './icons/play_arrow_black_24dp.svg';
 import PauseIcon from './icons/pause_black_24dp.svg';
 
+// import { ReactComponent as QiyaamIcon} from './poses/Namaz-0.svg';
+// import { ReactComponent as RukooIcon} from './poses/Namaz-1.svg';
+// import { ReactComponent as QaumahIcon} from './poses/Namaz-2.svg';
+// import { ReactComponent as SajdahIcon} from './poses/Namaz-3.svg';
+// import { ReactComponent as JalsaIcon} from './poses/Namaz-4.svg';
+// import { ReactComponent as PrevIcon} from './icons/navigate_before_black_24dp.svg';
+// import { ReactComponent as NextIcon} from './icons/navigate_next_black_24dp.svg';
+// import { ReactComponent as PlayIcon} from './icons/play_arrow_black_24dp.svg';
+// import { ReactComponent as PauseIcon} from './icons/pause_black_24dp.svg';
+
 
 
 // import Qiyam1 from './audio/Qiyam1.aac';
